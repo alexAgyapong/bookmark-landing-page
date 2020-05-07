@@ -1,1 +1,213 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.google.com/specimen/Rubik);
+
+:root {
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  /* font-family: "Rubik", Arial, Helvetica, sans-serif; */
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.red-button{
+  background-color: var(--soft-red);
+  color: wheat;
+}
+
+#intro-text p {
+  font-size: 1em;
+}
+
+#intro-image-container {
+  /* max-width: 200px;
+  max-height: 200px; */
+}
+
+.header-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.tab-image-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tabbed-content div {
+  text-align: left;
+  padding: 10px;
+}
+
+.tabs li {
+  list-style: none;
+  display: block;
+  cursor: pointer;
+  margin-left: -2.5rem;
+  text-align: center;
+}
+
+.tabs li:first-child,
+.tabs li:last-child {
+  border-top: 1px solid var(--grayish-blue);
+  border-bottom: 1px solid var(--grayish-blue);
+}
+
+/* .tabs li{
+  border: 1px solid red;
+} */
+
+.panel {
+  display: none;
+}
+
+.panel.active {
+  display: block;
+}
+.more-info {
+  visibility: hidden;
+}
+
+.browsers-header {
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px;
+  border-radius: 4px;
+}
+.card-image {
+  padding: 10px;
+  max-width: 100px;
+  max-height: auto;
+}
+
+.card-content {
+}
+
+.card-btn {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#faq-header {
+  text-align: center;
+  padding: 10px;
+}
+
+
+.accordion-btn {
+  /* width: 50%; */
+}
+
+.fa-angle-down .hide{
+  display: none;
+}
+
+.fa-angle-up {
+  display: none;
+}
+
+.fa-angle-up .show {
+  color: red;
+}
+
+
+.faq-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grayish-blue);
+  padding-bottom: 10px;
+  padding-right: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--soft-blue);
+  background-size: cover;
+  color: white;
+}
+
+#sub-links {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-blue);
+  background-size: cover;
+  color: white;
+  padding-bottom: 20px;
+}
+
+#logo {
+  margin: 10px;
+}
+
+#logo svg path {
+  fill: white;
+  border: 1px solid white;
+}
+
+#social-links {
+  display: inline;
+}
+
+#links a{
+  color: white;
+}
+
+#social-links a {
+  padding: 0 10px;
+}
+
+/* Breakpoints */
+@media screen and (min-width: 756px) {
+  .tabs li {
+    display: inline-block;
+    padding: 10px 14px;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .more-info {
+    visibility: visible;
+  }
+  .accordion-btn {
+    cursor: pointer;
+  }
+}
