@@ -17,20 +17,20 @@
     </nav>
   </header>
 </div>
-<section>
+<section id="intro">
+  <div id="intro-image-container">
+    <img src="../../assets/images/illustration-hero.svg" alt="" class="img-fluid">
+  </div>
   <div id="intro-text" class="text-center p-2">
     <h2> A Simple Bookmark Manager</h2>
     <p>
       A clean and simple interface to organize your favourite websites. Open a new
       browser tab and see your sites load instantly. Try it for free.
     </p>
-    <div id="browsers">
-      <button class="btn btn-primary mr-2">Get it on Chrome</button>
+    <div id="browser-links" class="d-flex justify-content-around pb-5">
+      <button class="btn btn-primary">Get it on Chrome</button>
       <button class="btn btn-light">Get it on Firefox</button>
     </div>
-  </div>
-  <div id="intro-image-container">
-    <img src="../../assets/images/illustration-hero.svg" alt="" class="img-fluid">
   </div>
 </section>
 <main>
@@ -41,7 +41,6 @@
       Your bookmarks sync between your devices so you can access them on the go.
     </p>
   </div>
-
   <div class="tabbed-content">
     <ul class="tabs">
       <li data-target="#bookmarking" class="active py-2">Simple Bookmarking</li>
@@ -83,38 +82,39 @@
       </div>
     </div>
   </div>
+  <section id="browsers">
+    <div class="browsers-header">
+      <h3> Download the extension</h3>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-image"><img src="../../assets/images/logo-chrome.svg" class="img-fluid"></div>
+        <h5> Add to Chrome</h5>
+        <h6> Minimum version 62</h6>
+        <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
+        <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="../../assets/images/logo-firefox.svg" class="img-fluid"></div>
+        <h5> Add to Firefox</h5>
+        <h6> Minimum version 55</h6>
+        <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
+        <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
+      </div>
+      <div class="card">
+        <div class="card-image"><img src="../../assets/images/logo-opera.svg" class="img-fluid"></div>
+        <h5> Add to Opera</h5>
+        <h6> Minimum version 46</h6>
+        <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
+        <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
+      </div>
+    </div>
+  </section>
 </main>
-<section id="browsers">
-  <div class="browsers-header">
-    <h3> Download the extension</h3>
-    <p>
-      We’ve got more browsers in the pipeline. Please do let us know if you’ve
-      got a favourite you’d like us to prioritize.
-    </p>
-  </div>
-
-  <div class="card">
-    <div class="card-image"><img src="../../assets/images/logo-chrome.svg" class="img-fluid"></div>
-    <h5> Add to Chrome</h5>
-    <h6> Minimum version 62</h6>
-    <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
-    <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
-  </div>
-  <div class="card">
-    <div class="card-image"><img src="../../assets/images/logo-firefox.svg" class="img-fluid"></div>
-    <h5> Add to Firefox</h5>
-    <h6> Minimum version 55</h6>
-    <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
-    <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
-  </div>
-  <div class="card">
-    <div class="card-image"><img src="../../assets/images/logo-opera.svg" class="img-fluid"></div>
-    <h5> Add to Opera</h5>
-    <h6> Minimum version 46</h6>
-    <img src="../../assets/images/bg-dots.svg" class="img-fluid py-3">
-    <button class="btn btn-primary card-btn mb-3"> Add & Install Extension</button>
-  </div>
-</section>
 <section id="faq">
   <div class="header-text" id="faq-header">
     <h3>Frequently Asked Questions</h3>
@@ -125,8 +125,8 @@
   </div>
   <div class="accordion p-2" id="faq-accordion">
     <div id="question-one" class="faq-question">
-      <a id="question-one-link" class="accordion-btn" type="button" data-toggle="collapse" data-target="#answer-one" aria-expanded="true"
-        aria-controls="question-one">
+      <a id="question-one-link" class="accordion-btn" type="button" data-toggle="collapse" data-target="#answer-one"
+        aria-expanded="true" aria-controls="question-one">
         <span>What is Bookmark?</span>
       </a><i class="fas fa-angle-down fa-lg"></i><i class="fas fa-angle-up fa-lg"></i>
     </div>
@@ -150,7 +150,8 @@
       </p>
     </div>
     <div id="question-three" class="faq-question">
-      <a id="question-three-link" data-toggle="collapse" data-target="#answer-three" class="accordion-btn " role="button">
+      <a id="question-three-link" data-toggle="collapse" data-target="#answer-three" class="accordion-btn "
+        role="button">
         <span>Is there a mobile app?</span>
       </a><i class="fas fa-angle-down fa-lg align-self-end"></i><i class="fas fa-angle-up fa-lg"></i>
     </div>

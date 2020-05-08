@@ -50,6 +50,7 @@ function toggleTabIcons() {
       const questionId = question.getAttribute('id');
       const selector = questionId.toString();
       console.log('event icon down', iconDown);
+      console.log('selector angle up', document.querySelector(`${selector} .fa-angle-up`));
       console.log('selector', selector);
     });
   });

@@ -17,18 +17,14 @@ body {
   font-size: 18px;
 }
 
-.red-button{
+.red-button {
   background-color: var(--soft-red);
   color: wheat;
 }
 
-#intro-text p {
-  font-size: 1em;
-}
-
-#intro-image-container {
-  /* max-width: 200px;
-  max-height: 200px; */
+h6,
+p {
+  opacity: 0.7;
 }
 
 .header-text {
@@ -60,10 +56,6 @@ body {
   border-bottom: 1px solid var(--grayish-blue);
 }
 
-/* .tabs li{
-  border: 1px solid red;
-} */
-
 .panel {
   display: none;
 }
@@ -71,13 +63,20 @@ body {
 .panel.active {
   display: block;
 }
+
 .more-info {
   visibility: hidden;
 }
 
+#browsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .browsers-header {
   text-align: center;
-  padding: 10px;
+  padding: 5px 10px;
 }
 
 .card {
@@ -87,6 +86,7 @@ body {
   margin: 10px 10px;
   border-radius: 4px;
 }
+
 .card-image {
   padding: 10px;
   max-width: 100px;
@@ -115,11 +115,7 @@ body {
 }
 
 
-.accordion-btn {
-  /* width: 50%; */
-}
-
-.fa-angle-down .hide{
+.fa-angle-down .hide {
   display: none;
 }
 
@@ -130,7 +126,6 @@ body {
 .fa-angle-up .show {
   color: red;
 }
-
 
 .faq-question {
   display: flex;
@@ -187,7 +182,7 @@ footer div {
   display: inline;
 }
 
-#links a{
+#links a {
   color: white;
 }
 
